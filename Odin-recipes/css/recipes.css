@@ -1,0 +1,32 @@
+/* Estilos específicos para as páginas de receita */
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px 40px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 8px;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+}

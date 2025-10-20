@@ -1,0 +1,31 @@
+/* Estilos específicos para a página principal */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 40px 60px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.recipe-list {
+    list-style: none;
+    padding: 0;
+}
+
+.recipe-list li {
+    margin: 15px 0;
+}
+
+.recipe-list a {
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
