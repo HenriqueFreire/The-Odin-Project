@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissors</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    .buttons button {
+      width: 160px; /* Increased size */
+      height: 160px; /* Increased size */
+      font-size: 20px;
+      margin: 0 20px;
+      cursor: pointer;
+      border: 2px solid #ccc;
+      border-radius: 15px;
+      background-color: #fff;
+      transition: transform 0.2s, box-shadow 0.2s;
+      padding: 15px; /* Add some padding */
+    }
+    .buttons button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .buttons button:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+    .buttons img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Ensures the image fits without being distorted */
+    }
+    .buttons svg {
+      width: 60px;
+      height: 60px;
+    }
+    #results {
+      margin-top: 40px;
+      font-size: 1.2em;
+      color: #555;
+    }
+    #score {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Rock, Paper, Scissors</h1>
+    <div class="buttons">
+      <button id="rock" title="Rock">
+        <img src="images/rock.png" alt="rock">
+      </button>
+      <button id="paper" title="Paper">
+        <img src="images/paper.png" alt="paper">
+      </button>
+      <button id="scissors" title="Scissors">
+        <img src="images/scissor.png" alt="scissors">
+      </button>
+    </div>
+    <div id="results">
+      <p id="round-result">Choose your weapon!</p>
+      <p id="score">Score: You 0 - 0 Computer</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
